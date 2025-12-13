@@ -1,3 +1,8 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { createRoot } from "react-dom/client";
+
+
 const heading = React.createElement(
   "h1",
   { id: "heading", xyz: "abc" },
@@ -14,19 +19,29 @@ const heading = React.createElement(
 //   )
 // );
 
-const parent2 = React.createElement("div", {id:"parent2"}, [ 
-  React.createElement("div", {id:"child"}, [
-    React.createElement("h1", {}, "I am h1 tag"),
-    React.createElement("h2", {}, "I'm an h2 tag"),
-  ]),
-   React.createElement("div", {id:"child2"}, [
-    React.createElement("h1", {}, "I am h1 tag"),
-    React.createElement("h2", {}, "I'm an h2 tag"),
-  ]),
-]);
+const parent2 = React.createElement(
+  "div",
+  { id: "parent2" },
+  [
+    React.createElement(
+      "div",
+      { id: "child", key: "child-1" },
+      [
+        React.createElement("h1", { key: "child-1-h1" }, "I am h1 tag"),
+        React.createElement("h2", { key: "child-1-h2" }, "I'm an h2 tag"),
+      ]
+    ),
+    React.createElement(
+      "div",
+      { id: "child2", key: "child-2" },
+      [
+        React.createElement("h1", { key: "child-2-h1" }, "I am h1 tag"),
+        React.createElement("h2", { key: "child-2-h2" }, "I'm an h2 tag"),
+      ]
+    ),
+  ]
+);
 
-//console.log(heading);
-console.log(parent2);
-const root = ReactDOM.createRoot(document.getElementById("root"));
+ReactDOM.createRoot(document.getElementById("root")).render(parent2);
 
-root.render(parent2);
+
