@@ -1,47 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createRoot } from "react-dom/client";
+import { jsx } from "react/jsx-runtime";
 
+// React.createElement => Object => HTMLElement(render)
+// const heading = React.createElement("h1", {id: "heading"}, "Bunty is learning react 👨🏻‍💻");
+// console.log(heading);
 
-const heading = React.createElement(
-  "h1",
-  { id: "heading", xyz: "abc" },
-  "Hello ReactJS!"
+// JSX syntax
+// JSX => Babels transpiles it to React.createElement => ReactElement-JS Object => Parcel Bundle it => Browser render it
+
+const jsxHeading = (
+  <h1 id="heading" className="head" tabIndex="5">
+    Bunty is learning JSX 👨🏻‍💻
+  </h1>
 );
 
-// const parent = React.createElement(
-//   "div",
-//   { id: "parent" },
-//   React.createElement(
-//     "div",
-//     { id: "child" },
-//     React.createElement("h1", {}, "I am an h1 Tag")
-//   )
-// );
+console.log(jsxHeading);
 
-const parent2 = React.createElement(
-  "div",
-  { id: "parent2" },
-  [
-    React.createElement(
-      "div",
-      { id: "child", key: "child-1" },
-      [
-        React.createElement("h1", { key: "child-1-h1" }, "I am h1 tag"),
-        React.createElement("h2", { key: "child-1-h2" }, "I'm an h2 tag"),
-      ]
-    ),
-    React.createElement(
-      "div",
-      { id: "child2", key: "child-2" },
-      [
-        React.createElement("h1", { key: "child-2-h1" }, "I am h1 tag"),
-        React.createElement("h2", { key: "child-2-h2" }, "I'm an h2 tag"),
-      ]
-    ),
-  ]
-);
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-ReactDOM.createRoot(document.getElementById("root")).render(parent2);
-
-
+root.render(jsxHeading);
