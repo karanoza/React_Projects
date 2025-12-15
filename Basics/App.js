@@ -7,16 +7,29 @@ import { jsx } from "react/jsx-runtime";
 // console.log(heading);
 
 // JSX syntax
+// const jsxHeading = (
+//    <h1 id="heading" className="head" tabIndex="5">
+//     Bunty is learning JSX 👨🏻‍💻
+//   </h1>
+// );
+
 // JSX => Babels transpiles it to React.createElement => ReactElement-JS Object => Parcel Bundle it => Browser render it
 
-const jsxHeading = (
-  <h1 id="heading" className="head" tabIndex="5">
+const Title = () => (
+   <h1 id="heading" className="head" tabIndex="5">
     Bunty is learning JSX 👨🏻‍💻
   </h1>
 );
 
-console.log(jsxHeading);
+
+//Component Composition
+const HeadingComponent = () => (
+  <><Title /><h1>This is a functional component</h1></>
+);
+
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(jsxHeading);
+
+root.render(<HeadingComponent />)
