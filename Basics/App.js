@@ -15,21 +15,23 @@ import { jsx } from "react/jsx-runtime";
 
 // JSX => Babels transpiles it to React.createElement => ReactElement-JS Object => Parcel Bundle it => Browser render it
 
-const Title = () => (
-   <h1 id="heading" className="head" tabIndex="5">
+const elem = <span>React element</span>
+
+const title = (
+  <h1 id="heading" className="head" tabIndex="5">
+    {elem}
     Bunty is learning JSX 👨🏻‍💻
   </h1>
 );
 
-
 //Component Composition
 const HeadingComponent = () => (
-  <><Title /><h1>This is a functional component</h1></>
+  <div id="container">
+    {title}
+    <h1>This is a functional component</h1>
+  </div>
 );
-
-
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-
-root.render(<HeadingComponent />)
+root.render(<HeadingComponent />);
