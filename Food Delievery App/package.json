@@ -1,0 +1,33 @@
+{
+  "name": "react_projects",
+  "version": "1.0.0",
+  "description": "React_boiler_plate",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karanoza/React_Projects.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "react",
+    "projects"
+  ],
+  "author": "Karan Oza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karanoza/React_Projects/issues"
+  },
+  "homepage": "https://github.com/karanoza/React_Projects#readme",
+  "devDependencies": {
+    "parcel": "^2.16.3"
+  },
+  "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  }
+}
