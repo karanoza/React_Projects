@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import logo from "./assets/logo.png";
+
 
 
 const Header = () => {
   return (
     <div className="header">
       <div className="logo-container">
-       <img className="logo" src={logo} alt="logo" />
+       <img className="logo" src="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png" alt="logo" />
       </div>
       <div className="nav-items">
         <ul>
