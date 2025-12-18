@@ -1616,16 +1616,10 @@ const Body = () => {
     <div className="body">
       <div className="search">Search</div>
       <div className="res-container">
-        <RestaurantCard resData={resList[0].info} />
-        <RestaurantCard resData={resList[1].info} />
-        <RestaurantCard resData={resList[2].info} />
-        <RestaurantCard resData={resList[3].info} />
-        <RestaurantCard resData={resList[4].info} />
-        <RestaurantCard resData={resList[5].info} />
-        <RestaurantCard resData={resList[6].info} />
-        <RestaurantCard resData={resList[7].info} />
-        <RestaurantCard resData={resList[8].info} />
-        <RestaurantCard resData={resList[9].info} />
+
+        {resList.map((restaurant) => (
+          <RestaurantCard key={restaurant.info.id} resData={restaurant.info} />
+        ))}
       </div>
     </div>
   );
