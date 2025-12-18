@@ -43,11 +43,36 @@
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
+.image-container {
+    position: relative;
+}
+
 .res-logo {
     width: 100%;
     height: 180px;
     object-fit: cover;
     border-radius: 12px 12px 0 0;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.discount-header {
+    font-size: 14px;
+}
+
+.discount-subheader {
+    font-size: 12px;
+    opacity: 0.9;
 }
 
 .card-content {

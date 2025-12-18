@@ -1596,16 +1596,25 @@ const RestaurantCard = (props) => {
   const imageSrc = resData
     ? `https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${resData.cloudinaryImageId}`
     : link;
+  const discount = resData ? resData.aggregatedDiscountInfoV3 : null;
 
   return (
     <div className="res-card">
-      <img className="res-logo" src={imageSrc} alt="restaurant-logo" />
+      <div className="image-container">
+        <img className="res-logo" src={imageSrc} alt="restaurant-logo" />
+        {discount && (
+          <div className="discount-badge">
+            <div className="discount-header">{discount.header}</div>
+            <div className="discount-subheader">{discount.subHeader}</div>
+          </div>
+        )}
+      </div>
       <div className="card-content">
         <div className="res-name">{name}</div>
         <div className="res-cuisines">{cuisines.join(", ")}</div>
         <div className="res-rating">⭐ {avgRating}</div>
         <div className="res-price">{priceforTwo}</div>
-        <div className="res-time">{slaString}</div>
+        <div className="res-time">{slaString} ⏱️</div>
       </div>
     </div>
   );
