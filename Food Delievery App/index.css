@@ -124,12 +124,24 @@
     margin: 20px;
 }
 
-.search {
-    border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
+.filter-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.filter-btn {
+    padding: 10px 15px;
+    border: none;
+    background-color: #ff5722;
+    color: white;
     font-weight: bold;
-    font-size: 18px;
+    border-radius: 6px;
     cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.filter-btn:hover {
+    background-color: #000000;
 }
