@@ -1,5 +1,6 @@
 import RestaurantCard from "./RestaurantCard";
 import Spinner from "./Spinner";
+import Shimmer from "./Shimmer"
 import { useState, useEffect } from "react";
 
 const Body = () => {
@@ -44,8 +45,10 @@ const Body = () => {
     }
   };
 
+  // Conditional rendering based on loading state and restaurant data
+  // If you want to show spinner just replace Shimmer with Spinner
   if(loading){
-    return <Spinner />;
+    return <Shimmer />;
   }
 
   if(restaurants.length === 0){
