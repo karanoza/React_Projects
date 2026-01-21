@@ -1,13 +1,44 @@
 import RestaurantCard from "./RestaurantCard";
-import resList from "../utils/data";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Body = () => {
   //local state variable for restaurants
-  const [restaurants, setRestaurants] = useState(resList);
+  const [restaurants, setRestaurants] = useState([]);
 
-  //Normal JS variable
-  let listOfRestaurants = [];
+  useEffect(() => {
+    // Simulating an API call to fetch restaurant data
+    fetchRestaurants();
+    console.log("Component mounted, fetched restaurant data.");
+  }, []);
+
+  const fetchRestaurants = async () => {
+    try {
+      // Fetching data from the Swiggy API
+      const response = await fetch("http://localhost:5001/api/swiggy");
+      const data = await response.json();
+
+      console.log("Full API response:", data);
+
+      // “Instead of relying on hardcoded indexes, 
+      // I dynamically locate the restaurant card by checking for the presence of 
+      // the restaurants property. This makes the code resilient to API structure 
+      // changes and avoids breaking when cards are reordered or new sections are introduced.”
+
+      const restaurantCard = data?.data?.cards?.find(
+        (c) => c?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      );
+
+      const restaurantsData =
+        restaurantCard?.card?.card?.gridElements?.infoWithStyle?.restaurants ||
+        [];
+
+      console.log("Extracted Restaurants Data:", restaurantsData);
+      setRestaurants(restaurantsData);
+    } catch (error) {
+      console.error("Error fetching restaurants:", error);
+      setRestaurants([]);
+    }
+  };
 
   return (
     <div className="body">
