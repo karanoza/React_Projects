@@ -1,9 +1,11 @@
 import RestaurantCard from "./RestaurantCard";
+import Spinner from "./Spinner";
 import { useState, useEffect } from "react";
 
 const Body = () => {
   //local state variable for restaurants
   const [restaurants, setRestaurants] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     // Simulating an API call to fetch restaurant data
@@ -34,11 +36,21 @@ const Body = () => {
 
       console.log("Extracted Restaurants Data:", restaurantsData);
       setRestaurants(restaurantsData);
+      setLoading(false);
     } catch (error) {
       console.error("Error fetching restaurants:", error);
       setRestaurants([]);
+      setLoading(false);
     }
   };
+
+  if(loading){
+    return <Spinner />;
+  }
+
+  if(restaurants.length === 0){
+    return <h1>No restaurants found</h1>;
+  }
 
   return (
     <div className="body">
