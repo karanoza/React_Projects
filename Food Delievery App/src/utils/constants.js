@@ -1,6 +1,6 @@
 const CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 
 
-const LOGO_URL = "https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png";
+const LOGO_URL = "https://1000logos.net/wp-content/uploads/2021/05/Swiggy-logo-500x281.png";
 
 export { CDN_URL, LOGO_URL };

@@ -1,6 +1,17 @@
 import { LOGO_URL } from "../utils/constants";
+import { useNavigate, useLocation } from "react-router-dom";
+import { useState } from "react";
 
 const Header = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const [btnName, setBtnName] = useState("LogIn");
+  console.log("header aagyaa");
+  
+
+  // Function to check if the current path matches the given path
+  const isActive = (path) => location.pathname === path;
+
   return (
     <div className="header">
       <div className="logo-container">
@@ -8,15 +19,38 @@ const Header = () => {
           className="logo"
           src={LOGO_URL}
           alt="logo"
+          onClick={() => navigate("/")}
+          style={{ cursor: "pointer" }}
         />
       </div>
       <div className="nav-items">
         <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
-          <li>Cart</li>
+          <li
+            className={`nav-item home-item ${isActive("/") ? "active" : ""}`}
+            onClick={() => navigate("/")}
+          >
+            🏠 Home
+          </li>
+          <li
+            className={`nav-item about-item ${
+              isActive("/about") ? "active" : ""
+            }`}
+            onClick={() => navigate("/about")}
+          >
+            ℹ️ About Us
+          </li>
+          <li className="nav-item contact-item">📞 Contact Us</li>
+          <li className="nav-item cart-item">🛒 Cart</li>
         </ul>
+        <button
+          className="login-btn"
+          onClick={() => {
+            btnName === "LogIn" ? setBtnName("LogOut") : setBtnName("LogIn");
+            console.log(btnName);
+          }}
+        >
+          🔐 {btnName}
+        </button>
       </div>
     </div>
   );

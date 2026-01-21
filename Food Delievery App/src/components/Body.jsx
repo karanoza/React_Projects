@@ -1,12 +1,16 @@
 import RestaurantCard from "./RestaurantCard";
 import Spinner from "./Spinner";
-import Shimmer from "./Shimmer"
+import Shimmer from "./Shimmer";
 import { useState, useEffect } from "react";
 
 const Body = () => {
   //local state variable for restaurants
   const [restaurants, setRestaurants] = useState([]);
+  const [allRestaurants, setAllRestaurants] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [searchQuery, setSearchQuery] = useState("");
+
+  //Whenever state variables update, the component re-renders
 
   useEffect(() => {
     // Simulating an API call to fetch restaurant data
@@ -22,9 +26,9 @@ const Body = () => {
 
       console.log("Full API response:", data);
 
-      // “Instead of relying on hardcoded indexes, 
-      // I dynamically locate the restaurant card by checking for the presence of 
-      // the restaurants property. This makes the code resilient to API structure 
+      // “Instead of relying on hardcoded indexes,
+      // I dynamically locate the restaurant card by checking for the presence of
+      // the restaurants property. This makes the code resilient to API structure
       // changes and avoids breaking when cards are reordered or new sections are introduced.”
 
       const restaurantCard = data?.data?.cards?.find(
@@ -37,6 +41,7 @@ const Body = () => {
 
       console.log("Extracted Restaurants Data:", restaurantsData);
       setRestaurants(restaurantsData);
+      setAllRestaurants(restaurantsData);
       setLoading(false);
     } catch (error) {
       console.error("Error fetching restaurants:", error);
@@ -47,16 +52,61 @@ const Body = () => {
 
   // Conditional rendering based on loading state and restaurant data
   // If you want to show spinner just replace Shimmer with Spinner
-  if(loading){
+  if (loading) {
     return <Shimmer />;
   }
-
-  if(restaurants.length === 0){
-    return <h1>No restaurants found</h1>;
-  }
-
-  return (
+  
+  // If no restaurants found after loading
+  return restaurants.length === 0 ? (
+    <div className="no-restaurants-container">
+      <div className="no-restaurants-content">
+        <div className="no-restaurants-emoji">🍽️</div>
+        <h1>No Restaurants Found</h1>
+        <p>Sorry, we couldn't find any restaurants matching your search.</p>
+        <button
+          className="no-restaurants-btn"
+          onClick={() => {
+            setSearchQuery("");
+            setRestaurants(allRestaurants);
+          }}
+        >
+          🔄 View All Restaurants
+        </button>
+      </div>
+    </div>
+  ) : (
+    // Main body content when restaurants are available
     <div className="body">
+      <div className="search">
+        <input
+          type="text"
+          className="search-input"
+          placeholder="🔍 Search restaurants..."
+          value={searchQuery}
+          onChange={(e) => {
+            const query = e.target.value;
+            setSearchQuery(query);
+            if (query === "") {
+              setRestaurants(allRestaurants);
+            }
+          }}
+        />
+        <button
+          className="search-btn"
+          onClick={() => {
+            if (searchQuery.trim() === "") {
+              setRestaurants(allRestaurants);
+            } else {
+              const filteredRestaurants = allRestaurants.filter((res) =>
+                res.info.name.toLowerCase().includes(searchQuery.toLowerCase())
+              );
+              setRestaurants(filteredRestaurants);
+            }
+          }}
+        >
+          🔍 Search
+        </button>
+      </div>
       <div className="filter-section">
         <button
           className="filter-btn"
