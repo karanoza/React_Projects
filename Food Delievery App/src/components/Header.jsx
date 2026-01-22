@@ -39,7 +39,14 @@ const Header = () => {
           >
             ℹ️ About Us
           </li>
-          <li className="nav-item contact-item">📞 Contact Us</li>
+          <li
+            className={`nav-item contact-item ${
+              isActive("/contact") ? "active" : ""
+            }`}
+            onClick={() => navigate("/contact")}
+          >
+            📞 Contact Us
+          </li>
           <li className="nav-item cart-item">🛒 Cart</li>
         </ul>
         <button
