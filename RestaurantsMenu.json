@@ -1,220 +1,400 @@
 {
-  "statusCode": 0,
-  "data": {
-    "statusMessage": "done successfully",
-    "cards": [
-      {
-        "card": {
+  "14780": {
+    "statusCode": 0,
+    "data": {
+      "statusMessage": "done successfully",
+      "cards": [
+        {
           "card": {
-            "type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
-            "info": {
-              "id": "14780",
-              "name": "Pizza Hut",
-              "city": "Pune",
-              "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/9/1/89c45acc-d48c-4c08-a8cf-2e552d58b89b_14780.JPG",
-              "locality": "Hinjewadi",
-              "areaName": "Hinjawadi",
-              "costForTwo": "35000",
-              "costForTwoMessage": "₹350 for two",
-              "cuisines": [
-                "Pizzas",
-                "Desserts"
-              ],
-              "avgRating": 4.2,
-              "totalRatingsString": "12K+ ratings",
-              "sla": {
-                "deliveryTime": 29,
-                "minDeliveryTime": 25,
-                "maxDeliveryTime": 30,
-                "lastMileTravel": 3,
-                "serviceability": "SERVICEABLE",
-                "slaString": "25-30 MINS"
+            "card": {
+              "type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "14780",
+                "name": "Pizza Hut",
+                "city": "Pune",
+                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/9/1/89c45acc-d48c-4c08-a8cf-2e552d58b89b_14780.JPG",
+                "costForTwoMessage": "₹350 for two",
+                "cuisines": ["Pizzas", "Desserts"],
+                "avgRating": 4.2,
+                "totalRatingsString": "12K+ ratings",
+                "sla": {"slaString": "25-30 MINS"}
+              }
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "gridElements": {
+                "infoWithStyle": {
+                  "itemCards": [
+                    {"card": {"info": {"id": "101432209", "name": "Classic Margarita Pizza", "category": "Pizzas", "description": "Fresh mozzarella, basil, tomato sauce", "price": 25900, "ratings": {"aggregatedRating": {"rating": "4.5"}}, "imageId": "https://www.dominos.co.in/blog/wp-content/uploads/2019/12/new_double_cheese_margherita.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "101432210", "name": "Peppy Paneer Pizza", "category": "Pizzas", "description": "Paneer, bell peppers, crispy onions", "price": 29900, "ratings": {"aggregatedRating": {"rating": "4.3"}}, "imageId": "https://www.dominos.co.in/files/items/Peppy_Paneer.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "101432211", "name": "Chicken BBQ Pizza", "category": "Pizzas", "description": "Grilled chicken with BBQ sauce", "price": 34900, "ratings": {"aggregatedRating": {"rating": "4.6"}}, "imageId": "https://images.dominos.co.in/bbq_chicken.jpg", "isVeg": 0}}},
+                    {"card": {"info": {"id": "101432212", "name": "Garlic Bread Sticks", "category": "Sides", "description": "Crispy bread with garlic butter", "price": 12900, "ratings": {"aggregatedRating": {"rating": "4.4"}}, "imageId": "https://www.dominos.co.in/files/items/garlic-bread.webp", "isVeg": 1}}},
+                    {"card": {"info": {"id": "101432213", "name": "Cheese Dip", "category": "Sides", "description": "Creamy cheese dip with bread", "price": 9900, "ratings": {"aggregatedRating": {"rating": "4.2"}}, "imageId": "https://www.dominos.co.in/files/items/cheese-dip.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "101432214", "name": "Coca Cola", "category": "Beverages", "description": "Cold beverage - 250ml", "price": 6000, "ratings": {"aggregatedRating": {"rating": "4.1"}}, "imageId": "https://www.dominos.is/media/dd2lubca/coke.png", "isVeg": 1}}},
+                    {"card": {"info": {"id": "101432215", "name": "Chocolate Brownie", "category": "Desserts", "description": "Rich chocolate brownie with fudge", "price": 14900, "ratings": {"aggregatedRating": {"rating": "4.8"}}, "imageId": "https://pbs.twimg.com/media/FyaTPMJaYAAfxmh.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "101432216", "name": "Ice Cream Sundae", "category": "Desserts", "description": "Vanilla ice cream with chocolate syrup", "price": 7900, "ratings": {"aggregatedRating": {"rating": "4.7"}}, "imageId": "https://images.dominos.co.in/ice-cream-sundae.jpg", "isVeg": 1}}}
+                  ]
+                }
               }
             }
           }
         }
-      },
-      {
-        "card": {
+      ]
+    }
+  },
+  "441447": {
+    "statusCode": 0,
+    "data": {
+      "statusMessage": "done successfully",
+      "cards": [
+        {
           "card": {
-            "type": "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget",
-            "gridElements": {
-              "infoWithStyle": {
-                "itemCards": [
-                  {
-                    "card": {
-                      "info": {
-                        "id": "101432209",
-                        "name": "Classic Margarita Pizza",
-                        "category": "Pizzas",
-                        "description": "A timeless classic with fresh mozzarella, basil, and tomato sauce",
-                        "price": 25900,
-                        "ratings": {
-                          "aggregatedRating": {
-                            "rating": "4.5",
-                            "ratingCount": "2500",
-                            "ratingCountAttribute": "2.5K Ratings"
-                          }
-                        },
-                        "imageId": "https://www.dominos.co.in/blog/wp-content/uploads/2019/12/new_double_cheese_margherita.jpg",
-                        "isVeg": 1,
-                        "isEnabled": 1
-                      }
-                    }
-                  },
-                  {
-                    "card": {
-                      "info": {
-                        "id": "101432210",
-                        "name": "Peppy Paneer Pizza",
-                        "category": "Pizzas",
-                        "description": "Paneer chunks, bell peppers, and crispy onions on pizza base",
-                        "price": 29900,
-                        "ratings": {
-                          "aggregatedRating": {
-                            "rating": "4.3",
-                            "ratingCount": "1800",
-                            "ratingCountAttribute": "1.8K Ratings"
-                          }
-                        },
-                        "imageId": "https://www.dominos.co.in//files/items/Peppy_Paneer.jpg",
-                        "isVeg": 1,
-                        "isEnabled": 1
-                      }
-                    }
-                  },
-                  {
-                    "card": {
-                      "info": {
-                        "id": "101432211",
-                        "name": "Veg Extravaganza",
-                        "category": "Pizzas",
-                        "description": "Corn, jalapeno, mashroom, and capcicum - a veg lovers delight",
-                        "price": 34900,
-                        "ratings": {
-                          "aggregatedRating": {
-                            "rating": "4.6",
-                            "ratingCount": "3200",
-                            "ratingCountAttribute": "3.2K Ratings"
-                          }
-                        },
-                        "imageId": "https://images.dominos.co.in/new_veg_extravaganza.jpg",
-                        "isVeg": 0,
-                        "isEnabled": 1
-                      }
-                    }
-                  },
-                  {
-                    "card": {
-                      "info": {
-                        "id": "101432212",
-                        "name": "Garlic Bread Sticks",
-                        "category": "Sides",
-                        "description": "Crispy bread sticks with garlic butter and herbs",
-                        "price": 12900,
-                        "ratings": {
-                          "aggregatedRating": {
-                            "rating": "4.4",
-                            "ratingCount": "1200",
-                            "ratingCountAttribute": "1.2K Ratings"
-                          }
-                        },
-                        "imageId": "https://www.dominos.co.in//files/items/garlic-bread.webp",
-                        "isVeg": 1,
-                        "isEnabled": 1
-                      }
-                    }
-                  },
-                  {
-                    "card": {
-                      "info": {
-                        "id": "101432213",
-                        "name": "Veggie Parcel",
-                        "category": "Sides",
-                        "description": "Fresh vegetable wrap with herbs and spices",
-                        "price": 18900,
-                        "ratings": {
-                          "aggregatedRating": {
-                            "rating": "4.2",
-                            "ratingCount": "900",
-                            "ratingCountAttribute": "900 Ratings"
-                          }
-                        },
-                        "imageId": "https://www.dominos.co.in//files/items/150135_AHA_Menu_main_1.jpg",
-                        "isVeg": 1,
-                        "isEnabled": 1
-                      }
-                    }
-                  },
-                  {
-                    "card": {
-                      "info": {
-                        "id": "101432214",
-                        "name": "Tandoori Chicken",
-                        "category": "Main Course",
-                        "description": "Succulent tandoori chicken with aromatic spices",
-                        "price": 39900,
-                        "ratings": {
-                          "aggregatedRating": {
-                            "rating": "4.7",
-                            "ratingCount": "4100",
-                            "ratingCountAttribute": "4.1K Ratings"
-                          }
-                        },
-                        "imageId": "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(18).png",
-                        "isVeg": 0,
-                        "isEnabled": 1
-                      }
-                    }
-                  },
-                  {
-                    "card": {
-                      "info": {
-                        "id": "101432215",
-                        "name": "Coca Cola",
-                        "category": "Beverages",
-                        "description": "Refreshing cold beverage - 250ml",
-                        "price": 6000,
-                        "ratings": {
-                          "aggregatedRating": {
-                            "rating": "4.1",
-                            "ratingCount": "5000",
-                            "ratingCountAttribute": "5K Ratings"
-                          }
-                        },
-                        "imageId": "https://www.dominos.is/media/dd2lubca/coke-sykurlaust.png?width=630&format=webp&quality=70",
-                        "isVeg": 1,
-                        "isEnabled": 1
-                      }
-                    }
-                  },
-                  {
-                    "card": {
-                      "info": {
-                        "id": "101432216",
-                        "name": "Chocolate Brownie Fudge",
-                        "category": "Desserts",
-                        "description": "Rich and decadent chocolate brownie with fudge sauce",
-                        "price": 14900,
-                        "ratings": {
-                          "aggregatedRating": {
-                            "rating": "4.8",
-                            "ratingCount": "2800",
-                            "ratingCountAttribute": "2.8K Ratings"
-                          }
-                        },
-                        "imageId": "https://pbs.twimg.com/media/FyaTPMJaYAAfxmh.jpg",
-                        "isVeg": 1,
-                        "isEnabled": 1
-                      }
-                    }
-                  }
-                ]
+            "card": {
+              "info": {
+                "id": "441447",
+                "name": "Burger King",
+                "city": "Pune",
+                "costForTwoMessage": "₹350 for two",
+                "cuisines": ["Burgers", "American"],
+                "avgRating": 4.2,
+                "totalRatingsString": "16K+ ratings",
+                "sla": {"slaString": "20-25 MINS"}
+              }
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "gridElements": {
+                "infoWithStyle": {
+                  "itemCards": [
+                    {"card": {"info": {"id": "201432201", "name": "Whopper", "category": "Burgers", "description": "Flame-grilled beef patty with toppings", "price": 27900, "ratings": {"aggregatedRating": {"rating": "4.6"}}, "imageId": "https://www.burgerking.co.in/media/images/whopper.jpg", "isVeg": 0}}},
+                    {"card": {"info": {"id": "201432202", "name": "Veggie Burger", "category": "Burgers", "description": "Crispy veggie patty with fresh vegetables", "price": 19900, "ratings": {"aggregatedRating": {"rating": "4.3"}}, "imageId": "https://www.burgerking.co.in/media/images/veggie.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "201432203", "name": "Chicken Burger", "category": "Burgers", "description": "Crispy fried chicken with mayo", "price": 24900, "ratings": {"aggregatedRating": {"rating": "4.4"}}, "imageId": "https://www.burgerking.co.in/media/images/chicken.jpg", "isVeg": 0}}},
+                    {"card": {"info": {"id": "201432204", "name": "French Fries", "category": "Sides", "description": "Crispy golden fries - Medium", "price": 8900, "ratings": {"aggregatedRating": {"rating": "4.5"}}, "imageId": "https://www.burgerking.co.in/media/images/fries.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "201432205", "name": "Onion Rings", "category": "Sides", "description": "Crispy fried onion rings", "price": 10900, "ratings": {"aggregatedRating": {"rating": "4.2"}}, "imageId": "https://www.burgerking.co.in/media/images/onion-rings.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "201432206", "name": "Coca Cola", "category": "Beverages", "description": "Cold drink - 300ml", "price": 5000, "ratings": {"aggregatedRating": {"rating": "4.0"}}, "imageId": "https://www.burgerking.co.in/media/images/coke.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "201432207", "name": "Apple Pie", "category": "Desserts", "description": "Warm apple pie with vanilla cream", "price": 6900, "ratings": {"aggregatedRating": {"rating": "4.3"}}, "imageId": "https://www.burgerking.co.in/media/images/apple-pie.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "201432208", "name": "Ice Cream Cone", "category": "Desserts", "description": "Soft-serve vanilla ice cream cone", "price": 4900, "ratings": {"aggregatedRating": {"rating": "4.4"}}, "imageId": "https://www.burgerking.co.in/media/images/ice-cream.jpg", "isVeg": 1}}}
+                  ]
+                }
               }
             }
           }
         }
-      }
-    ]
+      ]
+    }
+  },
+  "64174": {
+    "statusCode": 0,
+    "data": {
+      "statusMessage": "done successfully",
+      "cards": [
+        {
+          "card": {
+            "card": {
+              "info": {
+                "id": "64174",
+                "name": "Aroma's Hyderabad House",
+                "city": "Pune",
+                "costForTwoMessage": "₹400 for two",
+                "cuisines": ["Hyderabadi", "Biryani"],
+                "avgRating": 4.4,
+                "totalRatingsString": "8K+ ratings",
+                "sla": {"slaString": "30-40 MINS"}
+              }
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "gridElements": {
+                "infoWithStyle": {
+                  "itemCards": [
+                    {"card": {"info": {"id": "301432201", "name": "Chicken Biryani", "category": "Biryani", "description": "Fragrant biryani with tender chicken", "price": 34900, "ratings": {"aggregatedRating": {"rating": "4.7"}}, "imageId": "https://images.pexels.com/photos/28270/pexels-photo.jpg", "isVeg": 0}}},
+                    {"card": {"info": {"id": "301432202", "name": "Mutton Biryani", "category": "Biryani", "description": "Aromatic biryani with succulent mutton", "price": 42900, "ratings": {"aggregatedRating": {"rating": "4.8"}}, "imageId": "https://images.pexels.com/photos/28271/pexels-photo.jpg", "isVeg": 0}}},
+                    {"card": {"info": {"id": "301432203", "name": "Veg Biryani", "category": "Biryani", "description": "Mixed vegetables biryani with basmati", "price": 24900, "ratings": {"aggregatedRating": {"rating": "4.3"}}, "imageId": "https://images.pexels.com/photos/28272/pexels-photo.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "301432204", "name": "Raita", "category": "Sides", "description": "Yogurt-based side with cucumber", "price": 7900, "ratings": {"aggregatedRating": {"rating": "4.1"}}, "imageId": "https://images.pexels.com/photos/28273/pexels-photo.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "301432205", "name": "Shorba", "category": "Sides", "description": "Traditional meat broth", "price": 12900, "ratings": {"aggregatedRating": {"rating": "4.2"}}, "imageId": "https://images.pexels.com/photos/28274/pexels-photo.jpg", "isVeg": 0}}},
+                    {"card": {"info": {"id": "301432206", "name": "Mirchi ka Salan", "category": "Sides", "description": "Green chilli curry", "price": 9900, "ratings": {"aggregatedRating": {"rating": "4.0"}}, "imageId": "https://images.pexels.com/photos/28275/pexels-photo.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "301432207", "name": "Kheer", "category": "Desserts", "description": "Rice pudding with nuts and cardamom", "price": 8900, "ratings": {"aggregatedRating": {"rating": "4.5"}}, "imageId": "https://images.pexels.com/photos/28276/pexels-photo.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "301432208", "name": "Lassi", "category": "Beverages", "description": "Traditional yogurt-based drink", "price": 5900, "ratings": {"aggregatedRating": {"rating": "4.3"}}, "imageId": "https://images.pexels.com/photos/28277/pexels-photo.jpg", "isVeg": 1}}}
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "3417": {
+    "statusCode": 0,
+    "data": {
+      "statusMessage": "done successfully",
+      "cards": [
+        {
+          "card": {
+            "card": {
+              "info": {
+                "id": "3417",
+                "name": "Subway",
+                "city": "Pune",
+                "costForTwoMessage": "₹250 for two",
+                "cuisines": ["Sandwiches", "Salads"],
+                "avgRating": 4.0,
+                "totalRatingsString": "10K+ ratings",
+                "sla": {"slaString": "18-22 MINS"}
+              }
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "gridElements": {
+                "infoWithStyle": {
+                  "itemCards": [
+                    {"card": {"info": {"id": "401432201", "name": "Italian BMT", "category": "Sandwiches", "description": "Premium Italian meats with veggies", "price": 19900, "ratings": {"aggregatedRating": {"rating": "4.3"}}, "imageId": "https://www.subway.co.in/media/images/bmt.jpg", "isVeg": 0}}},
+                    {"card": {"info": {"id": "401432202", "name": "Veggie Delite", "category": "Sandwiches", "description": "Fresh vegetables with light mayo", "price": 14900, "ratings": {"aggregatedRating": {"rating": "4.1"}}, "imageId": "https://www.subway.co.in/media/images/veggie.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "401432203", "name": "Oven Roasted Chicken", "category": "Sandwiches", "description": "Tender roasted chicken breast", "price": 17900, "ratings": {"aggregatedRating": {"rating": "4.4"}}, "imageId": "https://www.subway.co.in/media/images/chicken.jpg", "isVeg": 0}}},
+                    {"card": {"info": {"id": "401432204", "name": "Greek Salad", "category": "Salads", "description": "Feta cheese, olives, fresh veggies", "price": 12900, "ratings": {"aggregatedRating": {"rating": "4.2"}}, "imageId": "https://www.subway.co.in/media/images/greek-salad.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "401432205", "name": "Garden Fresh Salad", "category": "Salads", "description": "Mixed vegetables with light dressing", "price": 10900, "ratings": {"aggregatedRating": {"rating": "4.0"}}, "imageId": "https://www.subway.co.in/media/images/garden-salad.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "401432206", "name": "Cookies", "category": "Sides", "description": "Chocolate chip cookies - Pack of 2", "price": 6900, "ratings": {"aggregatedRating": {"rating": "4.3"}}, "imageId": "https://www.subway.co.in/media/images/cookies.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "401432207", "name": "Sprite", "category": "Beverages", "description": "Lemon-lime flavored drink - 300ml", "price": 4900, "ratings": {"aggregatedRating": {"rating": "4.0"}}, "imageId": "https://www.subway.co.in/media/images/sprite.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "401432208", "name": "Orange Juice", "category": "Beverages", "description": "Fresh orange juice - 250ml", "price": 5900, "ratings": {"aggregatedRating": {"rating": "4.2"}}, "imageId": "https://www.subway.co.in/media/images/orange-juice.jpg", "isVeg": 1}}}
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "23716": {
+    "statusCode": 0,
+    "data": {
+      "statusMessage": "done successfully",
+      "cards": [
+        {
+          "card": {
+            "card": {
+              "info": {
+                "id": "23716",
+                "name": "McDonald's",
+                "city": "Pune",
+                "costForTwoMessage": "₹300 for two",
+                "cuisines": ["Burgers", "Cafe"],
+                "avgRating": 4.1,
+                "totalRatingsString": "18K+ ratings",
+                "sla": {"slaString": "19-23 MINS"}
+              }
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "gridElements": {
+                "infoWithStyle": {
+                  "itemCards": [
+                    {"card": {"info": {"id": "501432201", "name": "Big Mac", "category": "Burgers", "description": "Two beef patties with special sauce", "price": 23900, "ratings": {"aggregatedRating": {"rating": "4.5"}}, "imageId": "https://www.mcdonalds.co.in/media/images/bigmac.jpg", "isVeg": 0}}},
+                    {"card": {"info": {"id": "501432202", "name": "McChicken", "category": "Burgers", "description": "Spicy grilled chicken patty", "price": 19900, "ratings": {"aggregatedRating": {"rating": "4.3"}}, "imageId": "https://www.mcdonalds.co.in/media/images/mcchicken.jpg", "isVeg": 0}}},
+                    {"card": {"info": {"id": "501432203", "name": "Aloo Tikki Burger", "category": "Burgers", "description": "Spiced potato patty with veggies", "price": 14900, "ratings": {"aggregatedRating": {"rating": "4.1"}}, "imageId": "https://www.mcdonalds.co.in/media/images/aloo-tikki.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "501432204", "name": "French Fries", "category": "Sides", "description": "Crispy fries - Medium", "price": 8900, "ratings": {"aggregatedRating": {"rating": "4.4"}}, "imageId": "https://www.mcdonalds.co.in/media/images/fries.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "501432205", "name": "Corn Cup", "category": "Sides", "description": "Buttered sweet corn", "price": 6900, "ratings": {"aggregatedRating": {"rating": "4.2"}}, "imageId": "https://www.mcdonalds.co.in/media/images/corn.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "501432206", "name": "Coke", "category": "Beverages", "description": "Classic cold drink - 300ml", "price": 5000, "ratings": {"aggregatedRating": {"rating": "4.0"}}, "imageId": "https://www.mcdonalds.co.in/media/images/coke.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "501432207", "name": "Mango Shake", "category": "Beverages", "description": "Thick creamy mango shake", "price": 7900, "ratings": {"aggregatedRating": {"rating": "4.3"}}, "imageId": "https://www.mcdonalds.co.in/media/images/mango-shake.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "501432208", "name": "Apple Pie", "category": "Desserts", "description": "Warm baked apple pie", "price": 5900, "ratings": {"aggregatedRating": {"rating": "4.2"}}, "imageId": "https://www.mcdonalds.co.in/media/images/apple-pie.jpg", "isVeg": 1}}}
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "89140": {
+    "statusCode": 0,
+    "data": {
+      "statusMessage": "done successfully",
+      "cards": [
+        {
+          "card": {
+            "card": {
+              "info": {
+                "id": "89140",
+                "name": "KFC",
+                "city": "Pune",
+                "costForTwoMessage": "₹350 for two",
+                "cuisines": ["Chicken", "Fast Food"],
+                "avgRating": 4.3,
+                "totalRatingsString": "14K+ ratings",
+                "sla": {"slaString": "23-28 MINS"}
+              }
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "gridElements": {
+                "infoWithStyle": {
+                  "itemCards": [
+                    {"card": {"info": {"id": "601432201", "name": "Crispy Fried Chicken", "category": "Chicken", "description": "Classic KFC fried chicken - 2 pieces", "price": 24900, "ratings": {"aggregatedRating": {"rating": "4.6"}}, "imageId": "https://www.kfc.co.in/media/images/fried-chicken.jpg", "isVeg": 0}}},
+                    {"card": {"info": {"id": "601432202", "name": "Zinger Burger", "category": "Burgers", "description": "Spicy crispy chicken burger", "price": 19900, "ratings": {"aggregatedRating": {"rating": "4.4"}}, "imageId": "https://www.kfc.co.in/media/images/zinger.jpg", "isVeg": 0}}},
+                    {"card": {"info": {"id": "601432203", "name": "Tandoori Wrap", "category": "Wraps", "description": "Tandoori spiced chicken wrap", "price": 17900, "ratings": {"aggregatedRating": {"rating": "4.2"}}, "imageId": "https://www.kfc.co.in/media/images/tandoori-wrap.jpg", "isVeg": 0}}},
+                    {"card": {"info": {"id": "601432204", "name": "French Fries", "category": "Sides", "description": "Regular French fries", "price": 8900, "ratings": {"aggregatedRating": {"rating": "4.3"}}, "imageId": "https://www.kfc.co.in/media/images/fries.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "601432205", "name": "Coleslaw", "category": "Sides", "description": "Creamy coleslaw", "price": 7900, "ratings": {"aggregatedRating": {"rating": "4.0"}}, "imageId": "https://www.kfc.co.in/media/images/coleslaw.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "601432206", "name": "Pepsi", "category": "Beverages", "description": "Cold cola drink - 300ml", "price": 5000, "ratings": {"aggregatedRating": {"rating": "4.1"}}, "imageId": "https://www.kfc.co.in/media/images/pepsi.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "601432207", "name": "Iced Tea", "category": "Beverages", "description": "Refreshing iced tea", "price": 6000, "ratings": {"aggregatedRating": {"rating": "4.2"}}, "imageId": "https://www.kfc.co.in/media/images/iced-tea.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "601432208", "name": "Choco Lava Cake", "category": "Desserts", "description": "Warm chocolate cake with lava center", "price": 9900, "ratings": {"aggregatedRating": {"rating": "4.7"}}, "imageId": "https://www.kfc.co.in/media/images/lava-cake.jpg", "isVeg": 1}}}
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "4872": {
+    "statusCode": 0,
+    "data": {
+      "statusMessage": "done successfully",
+      "cards": [
+        {
+          "card": {
+            "card": {
+              "info": {
+                "id": "4872",
+                "name": "Ghar Ka Khana - Since 2005",
+                "city": "Pune",
+                "costForTwoMessage": "₹300 for two",
+                "cuisines": ["Indian", "Home Food"],
+                "avgRating": 4.3,
+                "totalRatingsString": "9K+ ratings",
+                "sla": {"slaString": "30-35 MINS"}
+              }
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "gridElements": {
+                "infoWithStyle": {
+                  "itemCards": [
+                    {"card": {"info": {"id": "701432201", "name": "Dal Makhani", "category": "Curries", "description": "Creamy black lentils with butter", "price": 24900, "ratings": {"aggregatedRating": {"rating": "4.5"}}, "imageId": "https://images.pexels.com/photos/5049850/pexels-photo.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "701432202", "name": "Butter Chicken", "category": "Curries", "description": "Tender chicken in creamy tomato gravy", "price": 32900, "ratings": {"aggregatedRating": {"rating": "4.6"}}, "imageId": "https://images.pexels.com/photos/5049851/pexels-photo.jpg", "isVeg": 0}}},
+                    {"card": {"info": {"id": "701432203", "name": "Paneer Tikka Masala", "category": "Curries", "description": "Cottage cheese in aromatic spiced gravy", "price": 28900, "ratings": {"aggregatedRating": {"rating": "4.4"}}, "imageId": "https://images.pexels.com/photos/5049852/pexels-photo.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "701432204", "name": "Roti", "category": "Bread", "description": "Thin Indian flatbread", "price": 3900, "ratings": {"aggregatedRating": {"rating": "4.3"}}, "imageId": "https://images.pexels.com/photos/5049853/pexels-photo.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "701432205", "name": "Basmati Rice", "category": "Rice", "description": "Fragrant basmati rice", "price": 6900, "ratings": {"aggregatedRating": {"rating": "4.2"}}, "imageId": "https://images.pexels.com/photos/5049854/pexels-photo.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "701432206", "name": "Yogurt", "category": "Sides", "description": "Fresh homemade yogurt", "price": 5900, "ratings": {"aggregatedRating": {"rating": "4.1"}}, "imageId": "https://images.pexels.com/photos/5049855/pexels-photo.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "701432207", "name": "Gulab Jamun", "category": "Desserts", "description": "Soft cheese balls in sugar syrup", "price": 8900, "ratings": {"aggregatedRating": {"rating": "4.4"}}, "imageId": "https://images.pexels.com/photos/5049856/pexels-photo.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "701432208", "name": "Chai", "category": "Beverages", "description": "Traditional Indian tea", "price": 3000, "ratings": {"aggregatedRating": {"rating": "4.0"}}, "imageId": "https://images.pexels.com/photos/5049857/pexels-photo.jpg", "isVeg": 1}}}
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "298722": {
+    "statusCode": 0,
+    "data": {
+      "statusMessage": "done successfully",
+      "cards": [
+        {
+          "card": {
+            "card": {
+              "info": {
+                "id": "298722",
+                "name": "The Bombay Paratha Company",
+                "city": "Pune",
+                "costForTwoMessage": "₹200 for two",
+                "cuisines": ["Mughlai", "Paratha"],
+                "avgRating": 4.2,
+                "totalRatingsString": "7K+ ratings",
+                "sla": {"slaString": "25-30 MINS"}
+              }
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "gridElements": {
+                "infoWithStyle": {
+                  "itemCards": [
+                    {"card": {"info": {"id": "801432201", "name": "Aloo Paratha", "category": "Paratha", "description": "Potatoes stuffed flatbread with butter", "price": 12900, "ratings": {"aggregatedRating": {"rating": "4.4"}}, "imageId": "https://images.pexels.com/photos/3915857/pexels-photo.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "801432202", "name": "Paneer Paratha", "category": "Paratha", "description": "Cottage cheese and onion paratha", "price": 16900, "ratings": {"aggregatedRating": {"rating": "4.3"}}, "imageId": "https://images.pexels.com/photos/3915858/pexels-photo.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "801432203", "name": "Chicken Keema", "category": "Main Course", "description": "Ground chicken with spices", "price": 21900, "ratings": {"aggregatedRating": {"rating": "4.5"}}, "imageId": "https://images.pexels.com/photos/3915859/pexels-photo.jpg", "isVeg": 0}}},
+                    {"card": {"info": {"id": "801432204", "name": "Curd", "category": "Sides", "description": "Fresh homemade yogurt", "price": 6900, "ratings": {"aggregatedRating": {"rating": "4.2"}}, "imageId": "https://images.pexels.com/photos/3915860/pexels-photo.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "801432205", "name": "Pickle", "category": "Sides", "description": "Homemade mixed vegetable pickle", "price": 4900, "ratings": {"aggregatedRating": {"rating": "4.0"}}, "imageId": "https://images.pexels.com/photos/3915861/pexels-photo.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "801432206", "name": "Sweet Lassi", "category": "Beverages", "description": "Sweet yogurt drink with cardamom", "price": 5900, "ratings": {"aggregatedRating": {"rating": "4.3"}}, "imageId": "https://images.pexels.com/photos/3915862/pexels-photo.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "801432207", "name": "Khir", "category": "Desserts", "description": "Rice pudding with nuts", "price": 7900, "ratings": {"aggregatedRating": {"rating": "4.4"}}, "imageId": "https://images.pexels.com/photos/3915863/pexels-photo.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "801432208", "name": "Mango Sharbat", "category": "Beverages", "description": "Refreshing mango drink", "price": 4900, "ratings": {"aggregatedRating": {"rating": "4.1"}}, "imageId": "https://images.pexels.com/photos/3915864/pexels-photo.jpg", "isVeg": 1}}}
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "558827": {
+    "statusCode": 0,
+    "data": {
+      "statusMessage": "done successfully",
+      "cards": [
+        {
+          "card": {
+            "card": {
+              "info": {
+                "id": "558827",
+                "name": "HRX by EatFit",
+                "city": "Pune",
+                "costForTwoMessage": "₹250 for two",
+                "cuisines": ["Healthy", "Continental"],
+                "avgRating": 4.4,
+                "totalRatingsString": "6K+ ratings",
+                "sla": {"slaString": "24-28 MINS"}
+              }
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "gridElements": {
+                "infoWithStyle": {
+                  "itemCards": [
+                    {"card": {"info": {"id": "901432201", "name": "Greek Salad Bowl", "category": "Salads", "description": "Feta, olives, tomatoes with olive oil", "price": 16900, "ratings": {"aggregatedRating": {"rating": "4.5"}}, "imageId": "https://images.pexels.com/photos/1059905/pexels-photo.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "901432202", "name": "Grilled Chicken Salad", "category": "Salads", "description": "Grilled chicken with mixed greens", "price": 21900, "ratings": {"aggregatedRating": {"rating": "4.6"}}, "imageId": "https://images.pexels.com/photos/1059906/pexels-photo.jpg", "isVeg": 0}}},
+                    {"card": {"info": {"id": "901432203", "name": "Quinoa Bowl", "category": "Main", "description": "Protein-rich quinoa with vegetables", "price": 18900, "ratings": {"aggregatedRating": {"rating": "4.3"}}, "imageId": "https://images.pexels.com/photos/1059907/pexels-photo.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "901432204", "name": "Protein Smoothie", "category": "Beverages", "description": "High protein fruit smoothie", "price": 12900, "ratings": {"aggregatedRating": {"rating": "4.2"}}, "imageId": "https://images.pexels.com/photos/1059908/pexels-photo.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "901432205", "name": "Fresh Juice", "category": "Beverages", "description": "Freshly squeezed vegetable juice", "price": 10900, "ratings": {"aggregatedRating": {"rating": "4.1"}}, "imageId": "https://images.pexels.com/photos/1059909/pexels-photo.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "901432206", "name": "Whole Wheat Wrap", "category": "Wraps", "description": "Grilled veggie wrap in whole wheat", "price": 14900, "ratings": {"aggregatedRating": {"rating": "4.3"}}, "imageId": "https://images.pexels.com/photos/1059910/pexels-photo.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "901432207", "name": "Protein Bar", "category": "Snacks", "description": "Nutritious protein snack bar", "price": 8900, "ratings": {"aggregatedRating": {"rating": "4.0"}}, "imageId": "https://images.pexels.com/photos/1059911/pexels-photo.jpg", "isVeg": 1}}},
+                    {"card": {"info": {"id": "901432208", "name": "Detox Tea", "category": "Beverages", "description": "Herbal detox tea", "price": 6900, "ratings": {"aggregatedRating": {"rating": "4.2"}}, "imageId": "https://images.pexels.com/photos/1059912/pexels-photo.jpg", "isVeg": 1}}}
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
   }
 }

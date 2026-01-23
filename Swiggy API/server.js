@@ -43,17 +43,22 @@ app.get("/api/menu", (req, res) => {
     }
 
     const fileData = fs.readFileSync(jsonFilePath, "utf8");
-    const data = JSON.parse(fileData);
+    const allData = JSON.parse(fileData);
+    
+    // Get data for the specific restaurant ID
+    const restaurantData = allData[restaurantId];
+    
+    if (!restaurantData) {
+      console.warn(`⚠️ No menu data found for restaurant ${restaurantId}`);
+      // Return default Pizza Hut data if restaurant not found
+      return res.json(allData["14780"]);
+    }
     
     console.log(`✅ Served mock menu data for restaurant ${restaurantId}`);
-    res.json(data);
-
+    res.json(restaurantData);
   } catch (err) {
-    console.error("Error serving menu:", err.message);
-    res.status(500).json({
-      error: "Failed to fetch menu",
-      details: err.message
-    });
+    console.error("Error in /api/menu:", err);
+    res.status(500).json({ error: "Failed to fetch menu data" });
   }
 });
 
