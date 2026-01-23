@@ -1,0 +1,220 @@
+{
+  "statusCode": 0,
+  "data": {
+    "statusMessage": "done successfully",
+    "cards": [
+      {
+        "card": {
+          "card": {
+            "type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "14780",
+              "name": "Pizza Hut",
+              "city": "Pune",
+              "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/9/1/89c45acc-d48c-4c08-a8cf-2e552d58b89b_14780.JPG",
+              "locality": "Hinjewadi",
+              "areaName": "Hinjawadi",
+              "costForTwo": "35000",
+              "costForTwoMessage": "₹350 for two",
+              "cuisines": [
+                "Pizzas",
+                "Desserts"
+              ],
+              "avgRating": 4.2,
+              "totalRatingsString": "12K+ ratings",
+              "sla": {
+                "deliveryTime": 29,
+                "minDeliveryTime": 25,
+                "maxDeliveryTime": 30,
+                "lastMileTravel": 3,
+                "serviceability": "SERVICEABLE",
+                "slaString": "25-30 MINS"
+              }
+            }
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "type": "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget",
+            "gridElements": {
+              "infoWithStyle": {
+                "itemCards": [
+                  {
+                    "card": {
+                      "info": {
+                        "id": "101432209",
+                        "name": "Classic Margarita Pizza",
+                        "category": "Pizzas",
+                        "description": "A timeless classic with fresh mozzarella, basil, and tomato sauce",
+                        "price": 25900,
+                        "ratings": {
+                          "aggregatedRating": {
+                            "rating": "4.5",
+                            "ratingCount": "2500",
+                            "ratingCountAttribute": "2.5K Ratings"
+                          }
+                        },
+                        "imageId": "https://www.dominos.co.in/blog/wp-content/uploads/2019/12/new_double_cheese_margherita.jpg",
+                        "isVeg": 1,
+                        "isEnabled": 1
+                      }
+                    }
+                  },
+                  {
+                    "card": {
+                      "info": {
+                        "id": "101432210",
+                        "name": "Peppy Paneer Pizza",
+                        "category": "Pizzas",
+                        "description": "Paneer chunks, bell peppers, and crispy onions on pizza base",
+                        "price": 29900,
+                        "ratings": {
+                          "aggregatedRating": {
+                            "rating": "4.3",
+                            "ratingCount": "1800",
+                            "ratingCountAttribute": "1.8K Ratings"
+                          }
+                        },
+                        "imageId": "https://www.dominos.co.in//files/items/Peppy_Paneer.jpg",
+                        "isVeg": 1,
+                        "isEnabled": 1
+                      }
+                    }
+                  },
+                  {
+                    "card": {
+                      "info": {
+                        "id": "101432211",
+                        "name": "Veg Extravaganza",
+                        "category": "Pizzas",
+                        "description": "Corn, jalapeno, mashroom, and capcicum - a veg lovers delight",
+                        "price": 34900,
+                        "ratings": {
+                          "aggregatedRating": {
+                            "rating": "4.6",
+                            "ratingCount": "3200",
+                            "ratingCountAttribute": "3.2K Ratings"
+                          }
+                        },
+                        "imageId": "https://images.dominos.co.in/new_veg_extravaganza.jpg",
+                        "isVeg": 0,
+                        "isEnabled": 1
+                      }
+                    }
+                  },
+                  {
+                    "card": {
+                      "info": {
+                        "id": "101432212",
+                        "name": "Garlic Bread Sticks",
+                        "category": "Sides",
+                        "description": "Crispy bread sticks with garlic butter and herbs",
+                        "price": 12900,
+                        "ratings": {
+                          "aggregatedRating": {
+                            "rating": "4.4",
+                            "ratingCount": "1200",
+                            "ratingCountAttribute": "1.2K Ratings"
+                          }
+                        },
+                        "imageId": "https://www.dominos.co.in//files/items/garlic-bread.webp",
+                        "isVeg": 1,
+                        "isEnabled": 1
+                      }
+                    }
+                  },
+                  {
+                    "card": {
+                      "info": {
+                        "id": "101432213",
+                        "name": "Veggie Parcel",
+                        "category": "Sides",
+                        "description": "Fresh vegetable wrap with herbs and spices",
+                        "price": 18900,
+                        "ratings": {
+                          "aggregatedRating": {
+                            "rating": "4.2",
+                            "ratingCount": "900",
+                            "ratingCountAttribute": "900 Ratings"
+                          }
+                        },
+                        "imageId": "https://www.dominos.co.in//files/items/150135_AHA_Menu_main_1.jpg",
+                        "isVeg": 1,
+                        "isEnabled": 1
+                      }
+                    }
+                  },
+                  {
+                    "card": {
+                      "info": {
+                        "id": "101432214",
+                        "name": "Tandoori Chicken",
+                        "category": "Main Course",
+                        "description": "Succulent tandoori chicken with aromatic spices",
+                        "price": 39900,
+                        "ratings": {
+                          "aggregatedRating": {
+                            "rating": "4.7",
+                            "ratingCount": "4100",
+                            "ratingCountAttribute": "4.1K Ratings"
+                          }
+                        },
+                        "imageId": "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(18).png",
+                        "isVeg": 0,
+                        "isEnabled": 1
+                      }
+                    }
+                  },
+                  {
+                    "card": {
+                      "info": {
+                        "id": "101432215",
+                        "name": "Coca Cola",
+                        "category": "Beverages",
+                        "description": "Refreshing cold beverage - 250ml",
+                        "price": 6000,
+                        "ratings": {
+                          "aggregatedRating": {
+                            "rating": "4.1",
+                            "ratingCount": "5000",
+                            "ratingCountAttribute": "5K Ratings"
+                          }
+                        },
+                        "imageId": "https://www.dominos.is/media/dd2lubca/coke-sykurlaust.png?width=630&format=webp&quality=70",
+                        "isVeg": 1,
+                        "isEnabled": 1
+                      }
+                    }
+                  },
+                  {
+                    "card": {
+                      "info": {
+                        "id": "101432216",
+                        "name": "Chocolate Brownie Fudge",
+                        "category": "Desserts",
+                        "description": "Rich and decadent chocolate brownie with fudge sauce",
+                        "price": 14900,
+                        "ratings": {
+                          "aggregatedRating": {
+                            "rating": "4.8",
+                            "ratingCount": "2800",
+                            "ratingCountAttribute": "2.8K Ratings"
+                          }
+                        },
+                        "imageId": "https://pbs.twimg.com/media/FyaTPMJaYAAfxmh.jpg",
+                        "isVeg": 1,
+                        "isEnabled": 1
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}
