@@ -1,4 +1,6 @@
 import { useNavigate } from "react-router-dom";
+import  User from "./User";
+import UserClass from "./UserClass";
 
 const About = () => {
   const navigate = useNavigate();
@@ -11,7 +13,8 @@ const About = () => {
         </button>
         <h1>About Our Food Delivery App</h1>
       </div>
-
+  <User name={"Karan Oza"} />
+  <UserClass name={"Karan Oza ka class"} />
       <div className="about-content">
         <section className="about-section">
           <h2>🎯 Our Mission</h2>
