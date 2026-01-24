@@ -7,10 +7,12 @@ class UserClass extends React.Component {
         console.log("UserClass Constructor", props);
     }
     render() {
+        const { name, location } = this.props;
         return (
             <div>
-                <h2>User class base Profile</h2>
+                <h2>{name} base Profile</h2>
                 <p>This is the user class base profile component.</p>
+                <p>Location: {location}</p>
             </div>
         );
     }
