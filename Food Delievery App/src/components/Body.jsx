@@ -2,8 +2,10 @@ import RestaurantCard from "./RestaurantCard";
 import Spinner from "./Spinner";
 import Shimmer from "./Shimmer";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Body = () => {
+  const navigate = useNavigate();
   //local state variable for restaurants
   const [restaurants, setRestaurants] = useState([]);
   const [allRestaurants, setAllRestaurants] = useState([]);
@@ -164,7 +166,13 @@ const Body = () => {
       </div>
       <div className="res-container">
         {restaurants.map((restaurant) => (
-          <RestaurantCard key={restaurant.info.id} resData={restaurant.info} />
+          <div
+            key={restaurant.info.id}
+            onClick={() => navigate(`/restaurant/${restaurant.info.id}`)}
+            style={{ cursor: "pointer" }}
+          >
+            <RestaurantCard resData={restaurant.info} />
+          </div>
         ))}
       </div>
     </div>
