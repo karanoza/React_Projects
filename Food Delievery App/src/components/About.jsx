@@ -14,7 +14,7 @@ const About = () => {
         <h1>About Our Food Delivery App</h1>
       </div>
   <User name={"Karan Oza"} />
-  <UserClass name={"Karan Oza ka class"} />
+  <UserClass name={"Karan Oza ka class"} location={"Pune"} />
       <div className="about-content">
         <section className="about-section">
           <h2>🎯 Our Mission</h2>
