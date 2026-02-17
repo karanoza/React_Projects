@@ -3,7 +3,7 @@ import React from "react";
 class UserClass extends React.Component {
   constructor(props) {
     super(props);
-    console.log("Child UserClass Constructor", props);
+    console.log(this.props.name + "Child UserClass Constructor", props);
 
     this.state = {
       count: 0,
@@ -11,14 +11,18 @@ class UserClass extends React.Component {
     };
   }
 
+// componentDidMount is a lifecycle method that is called after the component is rendered for the first time. It is used to perform side effects such as fetching data via API calls, setting up subscriptions, or manually changing the DOM in React components.
+
   componentDidMount() {
-    console.log("Child UserClass componentDidMount");
+    console.log(this.props.name +"Child UserClass componentDidMount");
+    //first constructor is called then render is called and then componentDidMount is called. componentDidMount is called only once in the lifecycle of a component.
+    //Thats why we do API calls in componentDidMount because we want to fetch data after the component is rendered for the first time. If we do API calls in constructor then it will be called every time the component is rendered which is not good for performance.
   }
   render() {
     const { name, location } = this.props;
     const { count } = this.state;
     return (
-      console.log("Child UserClass Render", this.props),
+      console.log(this.props.name + "Child UserClass Render"),
       <div>
         <h2>{name} base Profile</h2>
         <h3>Count: {count}</h3>
@@ -40,3 +44,23 @@ class UserClass extends React.Component {
 }
 
 export default UserClass;
+
+
+/*
+- Parent Constructor
+- Parent Render
+
+  - First Child Constructor
+  - First Child Render
+  
+  - Second Child Constructor
+  - Second Child Render
+
+   <DOM Updated - In Single Batch>
+
+  - First Child componentDidMount
+  - Second Child componentDidMount
+
+- Parent componentDidMount
+
+*/
