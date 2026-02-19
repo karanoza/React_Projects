@@ -3,6 +3,7 @@ import Spinner from "./Spinner";
 import Shimmer from "./Shimmer";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () => {
   const navigate = useNavigate();
@@ -13,6 +14,21 @@ const Body = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
   //Whenever state variables update, the component re-renders
+
+//Custom hook to check online status.
+  const onlineStatus = useOnlineStatus();
+  
+  if (!onlineStatus) {  
+    return (
+      <div className="offline-container">
+        <div className="offline-content">
+          <div className="offline-emoji">📡</div>
+          <h1>You are offline</h1>
+          <p>Please check your internet connection.</p>
+        </div>
+      </div>
+    );
+  }
 
   useEffect(() => {
     // Simulating an API call to fetch restaurant data
@@ -57,6 +73,8 @@ const Body = () => {
   if (loading) {
     return <Shimmer />;
   }
+
+  
   
   // If no restaurants found after loading
   return restaurants.length === 0 ? (

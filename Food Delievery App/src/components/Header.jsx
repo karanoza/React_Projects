@@ -1,12 +1,14 @@
 import { LOGO_URL } from "../utils/constants";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useState } from "react";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Header = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [btnName, setBtnName] = useState("LogIn");
   console.log("header aagyaa");
+  const onlineStatus = useOnlineStatus();
   
 
   // Function to check if the current path matches the given path
@@ -59,7 +61,7 @@ const Header = () => {
             console.log(btnName);
           }}
         >
-          🔐 {btnName}
+          {onlineStatus ? "🟢" : "🔴"} 🔐 {btnName}
         </button>
       </div>
     </div>
