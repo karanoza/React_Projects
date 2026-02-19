@@ -1,64 +1,11 @@
-import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import useRestaurantMenu from "../utils/useRestaurantMenu";
 
 const RestaurantMenu = () => {
     const { resId } = useParams();
-    const [menu, setMenu] = useState([]);
-    const [restaurantInfo, setRestaurantInfo] = useState(null);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+    const { menu, restaurantInfo, loading, error } = useRestaurantMenu(resId);
 
-    useEffect(() => {
-        if (resId) {
-            fetchMenu(resId);
-        }
-    }, [resId]);
-
-    const fetchMenu = async (restaurantId) => {
-        try {
-            setLoading(true);
-            setError(null);
-
-            // Fetch from your backend API (mock data from RestaurantsMenu.json)
-            const apiUrl = `http://localhost:5001/api/menu?restaurantId=${restaurantId}`;
-            console.log("Fetching from backend:", apiUrl);
-
-            const response = await fetch(apiUrl);
-            
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-
-            const data = await response.json();
-            console.log("Full menu data:", data);
-
-            // Parse the mock JSON response structure
-            if (data && data.data && data.data.cards) {
-                // Extract restaurant info from first card
-                const restaurantData = data.data.cards[0]?.card?.card?.info;
-                console.log("Restaurant Info:", restaurantData);
-                
-                if (restaurantData) {
-                    setRestaurantInfo(restaurantData);
-                }
-
-                // Extract menu items from second card (gridElements)
-                const itemCards = data.data.cards[1]?.card?.card?.gridElements?.infoWithStyle?.itemCards;
-                console.log("Menu Items Cards:", itemCards);
-
-                if (itemCards && Array.isArray(itemCards)) {
-                    const items = itemCards.map(item => item.card?.info).filter(Boolean);
-                    console.log("Extracted items:", items);
-                    setMenu(items);
-                }
-            }
-        } catch (err) {
-            console.error("Error fetching menu:", err);
-            setError(err.message);
-        } finally {
-            setLoading(false);
-        }
-    };
+    // Handle loading and error states
 
     if (loading) {
         return (
@@ -79,7 +26,7 @@ const RestaurantMenu = () => {
         );
     }
 
-    // Main menu rendering
+    // Render restaurant info and menu items
     return (
         <div className="menu-page">
             {restaurantInfo && (

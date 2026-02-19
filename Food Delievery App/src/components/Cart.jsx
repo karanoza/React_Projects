@@ -18,10 +18,7 @@ class Cart extends Component {
     return (
       console.log("Parent Cart Render"),
       <div>
-        <h1>Class and functional Component differences</h1>
-       
-        <UserClass name={"First"} location={"Pune"} />
-         <UserClass name={"Second"} location={"Mumbai"} />
+       <UserClass />
       </div>
     );
   }
