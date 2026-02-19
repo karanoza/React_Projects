@@ -2,8 +2,9 @@
   "name": "react_projects",
   "version": "1.0.0",
   "description": "React_boiler_plate",
+  "type": "module",
   "scripts": {
-    "start": "parcel index.html",
+    "start": "parcel index.html --port 3000",
     "build": "parcel build index.html",
     "test": "jest"
   },
@@ -28,6 +29,7 @@
   },
   "dependencies": {
     "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "react-dom": "^19.2.3",
+    "react-router-dom": "^6.28.0"
   }
 }
