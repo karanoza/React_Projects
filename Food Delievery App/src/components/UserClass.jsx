@@ -10,16 +10,16 @@ class UserClass extends React.Component {
         name: "Dummy",
         Twitter: "Yo Developer",
         location: "Earth",
-        avatar_url:"https://www.dummyimage.com/avatar.png",
+        avatar_url: "https://www.dummyimage.com/avatar.png",
         company: "Dummy Company",
       },
     };
   }
 
-// componentDidMount is a lifecycle method that is called after the component is rendered for the first time. It is used to perform side effects such as fetching data via API calls, setting up subscriptions, or manually changing the DOM in React components.
+  // componentDidMount is a lifecycle method that is called after the component is rendered for the first time. It is used to perform side effects such as fetching data via API calls, setting up subscriptions, or manually changing the DOM in React components.
 
   async componentDidMount() {
-    console.log(this.props.name +"Child UserClass componentDidMount");
+    console.log(this.props.name + "Child UserClass componentDidMount");
     //first constructor is called then render is called and then componentDidMount is called. componentDidMount is called only once in the lifecycle of a component.
     //Thats why we do API calls in componentDidMount because we want to fetch data after the component is rendered for the first time. If we do API calls in constructor then it will be called every time the component is rendered which is not good for performance.
 
@@ -32,10 +32,14 @@ class UserClass extends React.Component {
     });
   }
   render() {
-    
     return (
       <div className="user-card">
-        <img src={this.state.userInfo.avatar_url} alt="Avatar" width="100" height="100" />
+        <img
+          src={this.state.userInfo.avatar_url}
+          alt="Avatar"
+          width="100"
+          height="100"
+        />
         <div className="user-card-details">
           <h2>Name: {this.state.userInfo.name}</h2>
           <h3>Twitter: {this.state.userInfo.twitter_username}</h3>
@@ -48,7 +52,6 @@ class UserClass extends React.Component {
 }
 
 export default UserClass;
-
 
 /*
 - Parent Constructor
