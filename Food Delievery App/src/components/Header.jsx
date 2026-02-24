@@ -27,11 +27,17 @@ const Header = () => {
       </div>
       <div className="nav-items">
         <ul>
-          <li
+           <li
             className={`nav-item home-item ${isActive("/") ? "active" : ""}`}
             onClick={() => navigate("/")}
           >
             🏠 Home
+          </li>
+          <li
+            className={`nav-item instamart-item ${isActive("/instamart") ? "active" : ""}`}
+            onClick={() => navigate("/instamart")}
+          >
+            🛍️ Instamart
           </li>
           <li
             className={`nav-item about-item ${
