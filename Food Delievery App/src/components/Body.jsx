@@ -1,4 +1,4 @@
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, {withPureVegBadge} from "./RestaurantCard";
 import Spinner from "./Spinner";
 import Shimmer from "./Shimmer";
 import { useState, useEffect } from "react";
@@ -13,6 +13,7 @@ const Body = () => {
   const [loading, setLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState("");
 
+  const PureVegRestaurantCard = withPureVegBadge(RestaurantCard);
   //Whenever state variables update, the component re-renders
 
 //Custom hook to check online status.
@@ -189,7 +190,13 @@ const Body = () => {
             onClick={() => navigate(`/restaurant/${restaurant.info.id}`)}
             style={{ cursor: "pointer" }}
           >
-            <RestaurantCard resData={restaurant.info} />
+            {/* If the restaurant has pure veg options add pure veg badge */}
+            {console.log("Restaurant Pure Veg Status:", restaurant.info.veg)}
+            {restaurant.info.veg ? (
+              <PureVegRestaurantCard resData={restaurant.info} />
+            ) : (
+              <RestaurantCard resData={restaurant.info} />
+            )}
           </div>
         ))}
       </div>
